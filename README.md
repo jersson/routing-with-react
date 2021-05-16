@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The v0.1 version is based on this great [article about routing](https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router), thanks [Joe Morgan](https://www.digitalocean.com/community/users/joemorgan) :)
+
 ## Available Scripts
 
 In the project directory, you can run:

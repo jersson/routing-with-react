@@ -27,10 +27,7 @@ function App() {
           <Route path="/Narwhal">
             <Narwhal />
           </Route>
-          <Route exact path="/Whale">
-            <Whale />
-          </Route>
-          <Route path="/Whale/:type">
+          <Route path="/Whale">
             <Whale />
           </Route>
         </Switch>

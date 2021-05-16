@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import './App.css';
+
+import Manatee from './components/Manatee/Manatee';
+import Narwhal from './components/Narwhal/Narwhal';
+import Whale from './components/Whale/Whale';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <h1>Marine Mammals</h1>
+      <BrowserRouter>
+      <nav>
+        <ul>
+          <li><Link to="/manatee">Manatee</Link></li>
+          <li><Link to="/narwhal">Narwhal</Link></li>
+          <li><Link to="/whale">Whale</Link></li>
+        </ul>
+      </nav>
+        <Switch>
+          <Route path="/Manatee">
+            <Manatee />
+          </Route>
+          <Route path="/Narwhal">
+            <Narwhal />
+          </Route>
+          <Route path="/Whale">
+            <Whale />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
